@@ -68,7 +68,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     top: 0;
@@ -85,19 +85,19 @@ body {
 @media (min-width: 300px) {
     .grid-0 {
         margin: 1rem auto;
-        width: 90%;
+        width: 70%;
     }
     .grid-1 {
         display: grid;
         grid-template-columns: 100%;
         margin: 1rem auto;
-        width: min(93%, 75rem);
+        width: min(73%);
     }
     .grid-2 {
         display: grid;
         grid-template-columns: 100%;
         margin: 1rem auto;
-        width: min(93%, 75rem);
+        width: min(73%);
     }
     /* Boxes, Content*/
     .box {
@@ -184,22 +184,25 @@ body {
         font-size: 0.75rem;
         border-top: solid 0.5px var(--bg-dark-Card);
         text-align: left;
+        padding: 0 0 0 20%;
+        margin-bottom: 20%;
     }
     .grid-4>p:nth-child(2) {
         text-align: right;
+        padding: 0 20% 0 0;
     }
     .grid-4>p:nth-child(3) {
         color: var(--fc-dark-text-White);
         font-size: 2rem;
         font-weight: var(--fw-bold);
         text-align: left;
-        padding: 10% 0 0 0;
+        padding: 0 0 0 20%;
     }
     .grid-4>p:nth-child(4) {
         font-size: 0.75rem;
         font-weight: var(--fw-bold);
         text-align: right;
-        padding: 20% 0 0 0;
+        padding: 20% 20% 0 0;
     }
     .img-box2 {
         vertical-align: middle;
@@ -341,7 +344,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 520px) {
     .grid-1 {
         display: grid;
         grid-template-columns: 49% 49%;
@@ -360,7 +363,7 @@ input:checked+.slider:before {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .grid-0 {
         display: grid;
         grid-template-columns: 90% 10%;
