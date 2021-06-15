@@ -210,99 +210,134 @@ body {
         width: 100%;
         height: 100%;
         margin: 5rem 0;
+        padding: 2rem 0;
         color: hsl(228, 45%, 44%);
-    }
-    /* Texts */
-    .title2 {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    h1 {
-        font-size: 1.5rem;
+        text-decoration: none;
         font-weight: var(--fw-bold);
+    }
+    a {
         color: var(--fc-dark-text-White);
-    }
-    h2 {
-        font-size: 1.225rem;
+        text-decoration: none;
         font-weight: var(--fw-bold);
-        color: var(--fc-dark-text-White);
     }
-    .text1 {
-        color: var(--fc-dark-text-Blue);
-        font-weight: var(--fw-bold);
-        font-size: 0.75rem;
+    a:hover {
+        color: red;
     }
-    .text2 {
-        color: var(--fc-dark-text-Blue);
-        font-weight: var(--fw-bold);
-        font-size: 0.75rem;
-        margin: auto 0;
-        padding: 1rem 0;
-        border-top: solid 0.5px var(--bg-dark-Card);
-    }
-    .box>p:nth-child(1) {
-        color: var(--fc-dark-text-Blue);
-        font-size: 0.75rem;
-        font-weight: var(--fw-bold);
-        margin-bottom: 0.5rem;
-    }
-    /* Switch*/
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 50px;
-        height: 24px;
-    }
-    /* The slider TOOGLE */
-    .toogle {
-        float: right;
-    }
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--clr-Toggle-dark);
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 16px;
-        width: 16px;
-        left: 4px;
-        bottom: 4px;
-        background: var(--bg-dark-color);
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-    input:checked+.slider {
-        background: var(--clr-Toggle-light);
-    }
-    input:focus+.slider {
-        box-shadow: 0 0 1px var(--clr-Toggle-light);
-    }
-    input:checked+.slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-        background: var(--bg-dark-color);
-    }
-    /* Rounded sliders */
-    .slider.round {
-        border-radius: 34px;
-    }
-    .slider.round:before {
-        border-radius: 50%;
-    }
+}
+
+
+/* Texts */
+
+.title2 {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    color: var(--fc-dark-text-White);
+}
+
+h2 {
+    font-size: 1.225rem;
+    font-weight: var(--fw-bold);
+    color: var(--fc-dark-text-White);
+}
+
+.text1 {
+    color: var(--fc-dark-text-Blue);
+    font-weight: var(--fw-bold);
+    font-size: 0.75rem;
+}
+
+.text2 {
+    color: var(--fc-dark-text-Blue);
+    font-weight: var(--fw-bold);
+    font-size: 0.75rem;
+    margin: auto 0;
+    padding: 1rem 0;
+    border-top: solid 0.5px var(--bg-dark-Card);
+}
+
+.box>p:nth-child(1) {
+    color: var(--fc-dark-text-Blue);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.5rem;
+}
+
+
+/* Switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+
+/* The slider TOOGLE */
+
+.toogle {
+    float: right;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-Toggle-dark);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background: var(--bg-dark-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: var(--clr-Toggle-light);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--clr-Toggle-light);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background: var(--bg-dark-color);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 @media (min-width: 600px) {
